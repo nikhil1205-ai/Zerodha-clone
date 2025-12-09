@@ -1,0 +1,37 @@
+/* Brand text style */
+.brand-text {
+  font-weight: 600;
+  color: #0f1724; /* dark gray */
+  letter-spacing: 0.2px;
+}
+
+/* CTA button styling (Zerodha-like orange) */
+.btn-cta {
+  background: linear-gradient(180deg, #ff7a00 0%, #ff6b00 100%);
+  border: none;
+  color: #fff;
+  padding: 6px 13px;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255,107,0,0.18);
+}
+
+/* Hover */
+.btn-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(255,107,0,0.24);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* make search smaller */
+.search-input {
+  width: 220px;
+  min-width: 140px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .search-input { display: none; }
+  .btn-cta { padding: 6px 10px; font-size: 14px; }
+}

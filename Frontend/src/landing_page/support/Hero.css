@@ -1,0 +1,52 @@
+/* small custom CSS for spinner & fine spacing */
+#supportHero .search-spinner {
+  position: absolute;
+  right: 110px; /* adjust to not overlap the button; tweak as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+#supportHero .search-spinner .dot {
+  width: 8px;
+  height: 8px;
+  background: #6c757d; /* bootstrap text-muted color */
+  border-radius: 50%;
+  display: inline-block;
+  animation: dot-bounce 0.9s infinite;
+}
+
+#supportHero .search-spinner .dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+#supportHero .search-spinner .dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes dot-bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.6; }
+  40% { transform: translateY(-6px); opacity: 1; }
+}
+
+/* ensure suggestion list items show well */
+#comboboxItems .list-group-item {
+  cursor: pointer;
+}
+#comboboxItems .list-group-item:hover,
+#comboboxItems .list-group-item:focus {
+  background-color: #f8f9fa;
+}
+
+/* responsive tweak for large search sizes */
+@media (min-width: 992px) {
+  #supportHero .input-group-lg .form-control {
+    height: 64px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #supportHero .input-group-lg .btn {
+    height: 64px;
+  }
+}
