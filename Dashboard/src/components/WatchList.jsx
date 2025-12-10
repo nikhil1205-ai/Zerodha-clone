@@ -1,9 +1,6 @@
 import React, { useState, useContext } from "react";
-
-// import axios from "axios";
-
+import axios from "axios";
 import GeneralContext from "./GeneralContext";
-
 import { Tooltip, Grow } from "@mui/material";
 
 import {
@@ -114,14 +111,14 @@ const WatchListItem = ({ stock }) => {
   return (
     <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <div className="item">
-        <p className={stock.isDown ? "down" : "up"}>{stock.name}</p>
-        <div className="itemInfo">
-          <span className="percent">{stock.percent}</span>
-          {stock.isDown ? (
+        <p className={stock.isDown ? "down" : "up"}>{stock.name}
+        {stock.isDown ? (
             <KeyboardArrowDown className="down" />
           ) : (
-            <KeyboardArrowUp className="down" />
-          )}
+            <KeyboardArrowUp className="down" style={{color:"green" }}/>
+          )}</p>
+        <div className="itemInfo">
+          <span className="percent">{stock.percent}</span><br/>
           <span className="price">{stock.price}</span>
         </div>
       </div>
@@ -138,8 +135,8 @@ const WatchListActions = ({ uid }) => {
   };
 
   return (
-    <span className="actions">
-      <span>
+    <div className="actions d-flex justify-content-center">
+      <div className="d-flex gap-2">
         <Tooltip
           title="Buy (B)"
           placement="top"
@@ -172,7 +169,7 @@ const WatchListActions = ({ uid }) => {
             <MoreHoriz className="icon" />
           </button>
         </Tooltip>
-      </span>
-    </span>
+      </div>
+    </div>
   );
 };

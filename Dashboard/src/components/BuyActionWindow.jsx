@@ -1,33 +1,33 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import { Link } from "react-router-dom";
-
 import axios from "axios";
-
 import GeneralContext from "./GeneralContext";
-
 import "./BuyActionWindow.css";
+import ClearOutlinedIcon from '@mui/icons-material/ClearOutlined';
 
 const BuyActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
+  const { closeBuyWindow } = useContext(GeneralContext);
 
   const handleBuyClick = () => {
-    axios.post("http://localhost:3002/newOrder", {
+    axios.post("http://localhost:8080/newOrder",{
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
       mode: "BUY",
     });
 
-    GeneralContext.closeBuyWindow();
+    closeBuyWindow();
   };
 
   const handleCancelClick = () => {
-    GeneralContext.closeBuyWindow();
+   closeBuyWindow();
   };
 
   return (
     <div className="container" id="buy-window" draggable="true">
+      <ClearOutlinedIcon onClick={handleCancelClick}  style={{ cursor: "pointer", fontSize: "28px" }}/>
       <div className="regular-order">
         <div className="inputs">
           <fieldset>
@@ -53,6 +53,7 @@ const BuyActionWindow = ({ uid }) => {
           </fieldset>
         </div>
       </div>
+      
 
       <div className="buttons">
         <span>Margin required ₹140.65</span>

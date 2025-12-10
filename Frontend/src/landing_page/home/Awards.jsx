@@ -27,7 +27,7 @@ export default function Awards(){
           <h4 className="fw-normal">No spam or gimmicks</h4>
           <p className="fs-6">
             No gimmicks, spam, "gamification", or annoying push notifications. High quality apps that you use at your pace, 
-            the way you like. <a href="/about/philosophy">Our philosophies.</a>
+            the way you like. <a href="" style={{textDecoration:"none"}}>Our philosophies.</a>
           </p>
         </div>
 
@@ -46,7 +46,7 @@ export default function Awards(){
           <p className="fs-6">
             With initiatives like behavioural finance and long-term investing tools, we don't just facilitate transactions,
             but actively help you do better with your money. Learn more about 
-            <a href="https://support.zerodha.com/category/console/profile/killswitch/articles/what-is-the-kill-switch" target="_blank" rel="noreferrer"> Kill Switch</a>.
+            <a href=""  style={{textDecoration:"none"}}> Kill Switch</a>.
           </p>
         </div>
       </div>

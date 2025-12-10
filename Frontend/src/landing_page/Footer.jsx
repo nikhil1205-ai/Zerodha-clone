@@ -137,19 +137,19 @@ function Footer() {
                         Broking Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public
                         School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India. For
                         any complaints pertaining to securities broking please write to
-                        <a href="mailto:complaints@zerodha.com">complaints@zerodha.com</a>, for
-                        DP related to <a href="mailto:dp@zerodha.com">dp@zerodha.com</a>. Please
+                        <a href="">complaints@zerodha.com</a>, for
+                        DP related to <a href="">dp@zerodha.com</a>. Please
                         ensure you carefully read the Risk Disclosure Document as prescribed by
                         SEBI | ICF
                         </p>
                         <p>
-                        Procedure to file a complaint on <a rel="nofollow" href="https://scores.sebi.gov.in/" target="_blank">SEBI SCORES</a>:
+                        Procedure to file a complaint on <a rel="nofollow" href="" target="_blank">SEBI SCORES</a>:
                         Register on SCORES portal. Mandatory details for filing complaints on SCORES: Name, PAN, Address, Mobile Number,
                         E-mail ID.
                         Benefits: Effective Communication, Speedy redressal of the grievances
                         </p>
                         <p>
-                            <a rel="nofollow" href="https://smartodr.in/" target="_blank">Smart Online Dispute Resolution</a> | <a href="https://zerodha-common.s3.ap-south-1.amazonaws.com/Downloads-and-resources/Smart%20ODR%20info.pdf" target="_blank">Grievances Redressal Mechanism</a>
+                            <a rel="nofollow" href="" target="_blank">Smart Online Dispute Resolution</a> | <a href="" target="_blank">Grievances Redressal Mechanism</a>
                         </p>
                         <p>
                         Investments in securities market are subject to market risks; read all the related documents carefully before investing.
@@ -158,7 +158,7 @@ function Footer() {
                         Attention investors: 1) Stock brokers can accept securities as margins from clients only by way of pledge in the depository system w.e.f September 01, 2020. 2) Update your e-mail and phone number with your stock broker / depository participant and receive OTP directly from depository on your e-mail and/or mobile number to create pledge. 3) Check your securities / MF / bonds in the consolidated account statement issued by NSDL/CDSL every month.
                         </p>
                         <p>
-                            India's largest broker based on networth as per NSE. <a rel="nofollow" href="https://enit.nseindia.com/MemDirWeb/brokerDetailPage_Beta?memID=2516&amp;h_MemType=members&amp;memName=ZERODHA%20BROKING%20LIMITED" target="_blank">NSE broker factsheet</a>
+                            India's largest broker based on networth as per NSE. <a rel="nofollow" href="" target="_blank">NSE broker factsheet</a>
                         </p>
                         <p>
                         "Prevent unauthorised transactions in your account. Update your mobile
@@ -175,7 +175,7 @@ function Footer() {
                         account. As a business we don't give stock tips, and have not authorized
                         anyone to trade on behalf of others. If you find anyone claiming to be
                         part of Zerodha and offering such services, please
-                        <a href="https://support.zerodha.com/category/your-zerodha-account/your-profile/ticket-creation/articles/how-do-i-place-a-complaint-at-zerodha">create
+                        <a href="">create
                             a ticket here</a>.
                         </p>
                         <p>

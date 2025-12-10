@@ -15,9 +15,7 @@ function Hero() {
 
             <div className="col-auto">
               <a
-                target="_blank"
-                rel="noreferrer"
-                href="/login?next=https%3A%2F%2Fsupport.zerodha.com%2Ftickets%2F"
+                href=""
                 className="btn btn-primary btn-sm d-inline-flex align-items-center"
                 aria-label="Open my tickets (opens in new tab)"
               >

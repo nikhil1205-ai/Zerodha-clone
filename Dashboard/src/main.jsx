@@ -10,7 +10,6 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/*" element={<Home />} />
-        
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

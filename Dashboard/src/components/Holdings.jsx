@@ -1,31 +1,30 @@
 import React, { useState, useEffect } from "react";
-// import axios, { all } from "axios";
+import axios, { all } from "axios";
 // import { VerticalGraph } from "./VerticalGraph";
-import { allHoldings } from "../data/data";
+// import { allHoldings } from "../data/data";
 
 const Holdings = () => {
-  // const [allHoldings, setAllHoldings] = useState([]);
+  const [allHoldings, setAllHoldings] = useState([]);
 
-  // useEffect(() => {
-  //   axios.get("http://localhost:3002/allHoldings").then((res) => {
-  //     // console.log(res.data);
-  //     setAllHoldings(res.data);
-  //   });
-  // }, []);
+  useEffect(() => {
+    axios.get("http://localhost:8080/allHoldings").then((res) => {
+      setAllHoldings(res.data);
+    });
+  }, []);
 
   // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  const labels = allHoldings.map((subArray) => subArray["name"]);
+  // const labels = allHoldings.map((subArray) => subArray["name"]);
 
-  const data = {
-    labels,
-    datasets: [
-      {
-        label: "Stock Price",
-        data: allHoldings.map((stock) => stock.price),
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
-      },
-    ],
-  };
+  // const data = {
+  //   labels,
+  //   datasets: [
+  //     {
+  //       label: "Stock Price",
+  //       data: allHoldings.map((stock) => stock.price),
+  //       backgroundColor: "rgba(255, 99, 132, 0.5)",
+  //     },
+  //   ],
+  // };
 
   // export const data = {
   //   labels,
