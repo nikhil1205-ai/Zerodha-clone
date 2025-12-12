@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios, { all } from "axios";
-// import { VerticalGraph } from "./VerticalGraph";
+import { VerticalGraph } from "./VerticalGraph";
 // import { allHoldings } from "../data/data";
 
 const Holdings = () => {
@@ -12,19 +12,18 @@ const Holdings = () => {
     });
   }, []);
 
-  // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  // const labels = allHoldings.map((subArray) => subArray["name"]);
+  const labels = allHoldings.map((subArray) => subArray["name"]);
 
-  // const data = {
-  //   labels,
-  //   datasets: [
-  //     {
-  //       label: "Stock Price",
-  //       data: allHoldings.map((stock) => stock.price),
-  //       backgroundColor: "rgba(255, 99, 132, 0.5)",
-  //     },
-  //   ],
-  // };
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: "Stock Price",
+        data: allHoldings.map((stock) => stock.price),
+        backgroundColor: "rgba(255, 99, 132, 0.5)",
+      },
+    ],
+  };
 
   // export const data = {
   //   labels,
@@ -83,7 +82,7 @@ const Holdings = () => {
         </table>
       </div>
 
-      {/* <div className="row">
+      <div className="row">
         <div className="col">
           <h5>
             29,875.<span>55</span>{" "}
@@ -101,7 +100,7 @@ const Holdings = () => {
           <p>P&L</p>
         </div>
       </div>
-      <VerticalGraph data={data} /> */}
+      <VerticalGraph data={data} />
     </>
   );
 };
