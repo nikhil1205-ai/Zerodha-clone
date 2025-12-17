@@ -71,7 +71,7 @@ function Navbar() {
           {/* Right side: search + CTAs */}
           <div className="d-flex align-items-center gap-2">
             {/* Primary CTA */}
-            <Link to="/signup" className="btn btn-sm btn-outline-primary">
+            <Link to="/login" className="btn btn-sm btn-outline-primary">
               Login
             </Link>
             <Link to="/signup" className="btn btn-sm btn-primary">
