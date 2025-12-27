@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import api from "../../api";
+import redirecturl from "../../redirect.js"
+
 export default function Login() {
   const [formData, setFormData] = useState({
     email: "",
@@ -18,7 +20,7 @@ export default function Login() {
           email: formData.email,
           password: formData.password,
         });
-      window.location.href = "http://localhost:5173/"; 
+      window.location.href = redirecturl; 
     } catch (err) {
       console.error(err);
       alert("Invalid email or password");

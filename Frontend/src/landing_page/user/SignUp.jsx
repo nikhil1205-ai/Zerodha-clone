@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { Link } from 'react-router-dom';
 import api from "../../api";
+import redirecturl from "../../redirect.js"
 
 export default function Signup() {
   const [formData, setFormData] = useState({
@@ -24,7 +24,7 @@ export default function Signup() {
         password: formData.password,
       });
       setShowDialog(true);
-      window.location.href = "http://localhost:5173/";
+      window.location.href = redirecturl;
     } catch (err) {
       console.error(err);
       alert("Signup failed");
