@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import api from "../../api";
-import AlertDialog from "../../AlertDialog"
 export default function Login() {
   const [formData, setFormData] = useState({
     email: "",

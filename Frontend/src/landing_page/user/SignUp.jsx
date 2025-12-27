@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link } from 'react-router-dom';
 import api from "../../api";
-import AlertDialog from "../../AlertDialog"
 
 export default function Signup() {
   const [formData, setFormData] = useState({
