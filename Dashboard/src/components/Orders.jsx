@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import axios, { all } from "axios";
 import { VerticalGraph } from "./VerticalGraph";
 
 const Orders = () => {
   const [allOrders, setAllOrders] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/allOrders").then((res) => {
+    api.get("/allOrders").then((res) => {
       setAllOrders(res.data);
     });
   }, []);
