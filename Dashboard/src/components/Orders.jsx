@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { VerticalGraph } from "./VerticalGraph";
+import api from "../api";
 
 const Orders = () => {
   const [allOrders, setAllOrders] = useState([]);

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { VerticalGraph } from "./VerticalGraph";
 // import { allHoldings } from "../data/data";
+import api from "../api";
 
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
