@@ -58,11 +58,11 @@ function Navbar() {
                 Tools
               </a>
               <ul className="dropdown-menu shadow-sm" aria-labelledby="productsDropdown">
-                <li><a className="dropdown-item" href="/kite">Kite (Web)</a></li>
-                <li><a className="dropdown-item" href="/coin">Coin (MF)</a></li>
-                <li><a className="dropdown-item" href="/console">Console</a></li>
+                <li><a className="dropdown-item" href="/">Kite (Web)</a></li>
+                <li><a className="dropdown-item" href="/">Coin (MF)</a></li>
+                <li><a className="dropdown-item" href="/">Console</a></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="/apis">APIs & Developers</a></li>
+                <li><a className="dropdown-item" href="/">APIs & Developers</a></li>
               </ul>
             </li>
 
